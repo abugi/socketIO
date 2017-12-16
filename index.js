@@ -1,11 +1,10 @@
-const express = require('express');
-const http = require('http');
-http.Server(app);
+const app = require('express')();
+const http = require('http').Server(app);
 
-app.get('/', function(req, res){
-     res.send('<h1>Hello World</h1>');
+app.get('/', function (req, res) {
+     res.send('<h1>Hello world</h1>');
 });
 
-http.listen(3000, function(){
-     console.log('We are live on port 3K');
+http.listen(3000, function () {
+     console.log('listening on *:3000');
 });
