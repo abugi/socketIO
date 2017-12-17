@@ -23,6 +23,4 @@ http.createServer(function (request, response) {
     response.write("<body>Hello Web</body>");
     response.write("</html>");
     response.end();
-});
-
-http.listen(9999);
+}).listen(9999);
